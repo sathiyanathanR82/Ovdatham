@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "webApp": {
+    "ovdatham": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "webApp:build:production"
+              "buildTarget": "ovdatham:build:production"
             },
             "development": {
-              "buildTarget": "webApp:build:development"
+              "buildTarget": "ovdatham:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "webApp:build"
+            "buildTarget": "ovdatham:build"
           }
         },
         "test": {
